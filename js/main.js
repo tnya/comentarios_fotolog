@@ -39,4 +39,15 @@ function saveData(){
 		commentContainer.appendChild(commentBox);
 	}
 
+//Funcion que limpia los comentarios
+function clearContainer(){
+	var commentContainer = document.getElementById("comments");
+	commentContainer.innerHTML = "";
+}
+
+	//Limpiando los inputs
+	document.getElementById("clave").value = "";
+	document.getElementById("valor").value = "";
+}
+
 }
