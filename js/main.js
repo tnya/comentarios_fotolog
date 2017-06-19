@@ -39,30 +39,4 @@ function saveData(){
 		commentContainer.appendChild(commentBox);
 	}
 
-//Funcion que limpia los comentarios
-function clearContainer(){
-	var commentContainer = document.getElementById("comments");
-	commentContainer.innerHTML = "";
 }
-
-	//Limpiando los inputs
-	document.getElementById("clave").value = "";
-	document.getElementById("valor").value = "";
-}
-
-//Guardando los datos ingresados
-(function guardar(){
-	document.getElementById("guardar-datos").addEventListener("click",saveData);
-	saveData();
-})();
-/* le digo al boton (llamandolo por su id) que ejecute la funcion que guarda mis datos (saveData) */
-
-//Para borrar los datos
-function deleteData(){
-	window.localStorage.clear();
-	clearContainer();
-}
-
-(function delete(){
-	document.getElementById("limpiar-datos").addEventListener("click",deleteData);
-})();
